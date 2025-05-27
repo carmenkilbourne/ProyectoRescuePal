@@ -1,5 +1,5 @@
 
-package otros;
+package integracion;
 
 import org.junit.jupiter.api.*;
 import vistas.paneles.modelo.FormularioAdopcionModelo;
@@ -47,7 +47,6 @@ public class FormularioAdopcionModeloTest {
 
     @Test
     public void testExisteSolicitudArchivoInexistente() {
-        // No se crea el archivo
         FormularioAdopcionModelo modelo = new FormularioAdopcionModelo();
         assertFalse(modelo.existeSolicitud("nadie@correo.com", "ID00000"));
     }

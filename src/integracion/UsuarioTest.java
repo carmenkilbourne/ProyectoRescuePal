@@ -1,6 +1,7 @@
-package otros;
+package integracion;
 
 import org.junit.Test;
+import otros.Usuario;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.jupiter.api.Assertions.*;
@@ -75,7 +76,7 @@ public class UsuarioTest {
     public void testDatosInvalidosSimulados() {
         Usuario usuario = new Usuario(
                 "noemail", "DNIINVALIDO", "abcde",
-                "not-a-date", "telefono?", "???"
+                "not-a-date", "telefono?","???"
         );
 
         assertEquals("noemail", usuario.getCorreo());
@@ -86,3 +87,4 @@ public class UsuarioTest {
         assertEquals("???", usuario.getPermisos());
     }
 }
+//rendimineto,seguridad carga,accesiilidad

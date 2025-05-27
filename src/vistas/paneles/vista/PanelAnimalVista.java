@@ -1,4 +1,4 @@
-package vistas.paneles.vistas;
+package vistas.paneles.vista;
 
 
 import javax.swing.*;
